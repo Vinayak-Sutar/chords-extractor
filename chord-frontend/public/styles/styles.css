@@ -1,0 +1,251 @@
+/* :root {
+  background-image: "../images/guit.jpg";
+  background-size: cover;
+} */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+body{
+  background: #f2f2f2;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.search {
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+
+.searchTerm {
+  width: 100%;
+  border: 3px solid #00B4CC;
+  border-right: none;
+  padding: 5px;
+  height: 20px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: #9DBFAF;
+}
+
+.searchTerm:focus{
+  color: #00B4CC;
+}
+
+.searchButton {
+  width: 40px;
+  height: 36px;
+  border: 1px solid #00B4CC;
+  background: #00B4CC;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/*Resize the wrap to see the search bar change!*/
+.wrap{
+  width: 40%;
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+
+}
+
+.cards{
+  width: 80%;
+  /* z-index: 1; */
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  margin-top: 10%;
+  gap: 10px;
+  z-index: 100;
+
+  
+}
+
+.card-struct{
+  /* border-style: solid;
+  border-width: 5px;
+  border-color: #00B4CC; */
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    flex: 1 1;
+    justify-content: flex-start;
+    /* font-size: 0.75rem; */
+    height: 120px;
+
+}
+
+.image{
+    /* width: 200px; */
+    height: 100%;
+    /* z-index: -1; */
+}
+.video-detail{
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    gap: 10px;
+}
+
+
+.video-title{
+  align-self: flex-start;
+  font-weight: 900;
+  font-size: 1rem;
+}
+
+.channel-name{
+  align-self: flex-start;
+
+    /* align-self: flex-end; */
+}
+
+/* ///// chords Grid */
+.chordGrid{
+    display: grid;
+    /* grid-template-columns: auto auto auto auto auto auto auto auto; */
+    grid-template-rows: 1fr ;
+    grid-auto-flow: column;
+    /* margin: 0 5%; */
+    overflow:auto;
+    text-align: center;
+    width: 100%;
+    height: 20vh;
+    text-align: -webkit-center;
+    overflow-y:auto;
+    border-style: solid;
+    border-color: grey;
+    padding: 0 1%;
+    grid-gap: 2%;
+
+    /* position:fixed ;;
+    left: 5%; */
+
+}
+
+/* rgb(211, 235, 254) */
+.chordBox{
+    height: 160px;
+    width: 160px;
+    background-color: rgb(211, 225, 254);
+    border-radius: 10%;
+    text-align: -webkit-center;
+    line-height: 160px;
+    vertical-align: middle;
+    margin:  10%;
+    place-self: center; 
+}
+
+.container{
+  display: flex;
+  flex: 1 ;
+  gap: 5%;
+  justify-content: center;
+  flex-wrap: wrap;
+  
+}
+.audioBox{
+  margin: 5% 0;
+  text-align: -webkit-center;
+  /* background-color: black; */
+}
+.controller{
+  margin: 5% 0;
+  display: flex;
+  width:30%;
+  height: vh;
+  background-color: rgb(211, 235, 254);
+  border-style: solid;
+  border-color: black;
+}
+
+.controller-image{
+  width:15%;
+  margin: 10%;
+}
+
+.capo{
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+
+@media(max-width:700px){
+
+  /* .chordflex{
+    position: static;
+    padding: 10%;
+    display: flex;
+    flex-direction: column-reverse; */
+  }
+
+
+  
+
+  .audioBox{
+    /* width: 100%; */
+    display: block;
+  }
+
+  .chordGrid{
+    grid-template-columns: auto auto auto auto auto auto auto auto;
+    grid-auto-flow: row;
+    overflow:auto;
+    width: 100%;
+    /* text-align: -webkit-center; */
+    grid-gap: 0.8%;
+    height: 60vh;
+    padding: 1% 0;
+    position: absolute;
+    top: 30%;
+  }
+
+  .chordBox{
+    width: 43px;
+    height: 43px;
+    /* width: 100%; */
+    /* height: 100%; */
+    line-height: 38px;
+    background-color: rgb(211, 235, 254);
+    font-size: 2vw;
+    margin: 0;
+    border-radius: 5%;
+  }
+
+  .container{
+    flex-direction: row;
+    gap: 1%;
+    position: absolute;
+    top: 8%;
+  }
+
+  .controller{
+    flex : 1;
+    width: 100%;
+  }
+
+  .audioBox{
+    flex : 1;
+  }
+
+  .capo{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+
+
+
+
+
+
+
