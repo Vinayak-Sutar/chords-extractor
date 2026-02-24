@@ -1,0 +1,40 @@
+# Core Flask dependencies
+flask==3.0.0
+flask-cors==4.0.0
+werkzeug==3.0.0
+
+# TensorFlow and Keras (MUST be installed first for autochord)
+tensorflow==2.12.0
+keras==2.12.0
+
+# NumPy - compatible with TensorFlow 2.12 (CRITICAL: must be <2.0)
+numpy==1.23.5
+
+# Scientific computing
+scipy==1.10.1
+numba==0.57.0
+
+# Audio processing and chord recognition
+librosa==0.10.0.post2
+autochord==0.1.4
+audioread==3.0.0
+soundfile==0.12.1
+audioread>=3.0.0
+
+# YouTube downloading
+pytube==15.0.0
+moviepy==1.0.3
+decorator>=4.4.2
+
+# Database
+psycopg2-binary==2.9.9
+python-dotenv==1.0.0
+
+# Music theory and key detection
+music21==9.1.0
+
+# Other dependencies
+requests==2.31.0
+certifi>=2023.7.22
+urllib3>=1.26.5
+charset-normalizer>=3.2.0

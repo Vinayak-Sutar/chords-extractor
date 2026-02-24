@@ -1,0 +1,53 @@
+.chord-box {
+  aspect-ratio: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #e3f2fd;
+  border-radius: 10px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #1976d2;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  border: 2px solid transparent;
+}
+
+.chord-box:hover {
+  transform: scale(1.08);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  border-color: #667eea;
+}
+
+.chord-box.active {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  transform: scale(1.12);
+  box-shadow: 0 8px 25px rgba(102, 126, 234, 0.7);
+  border-color: #764ba2;
+  animation: pulse 0.6s ease-in-out;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1.12);
+  }
+  50% {
+    transform: scale(1.18);
+  }
+}
+
+@media (max-width: 968px) {
+  .chord-box {
+    font-size: 1.1rem;
+    border-radius: 8px;
+  }
+}
+
+@media (max-width: 700px) {
+  .chord-box {
+    font-size: 0.9rem;
+    border-radius: 6px;
+  }
+}

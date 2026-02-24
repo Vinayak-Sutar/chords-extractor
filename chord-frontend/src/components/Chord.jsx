@@ -1,9 +1,16 @@
-import { Fragment } from "react";
+import React from "react";
+import "./Chord.css";
 
-function Chord({ id, chord, colored, onClick }){
-    return <div id={id} className="chordBox" style={{"backgroundColor": colored ? "gray" : "rgb(211, 235, 254)"}} onClick={onClick} >
-            {chord}
+function Chord({ id, chord, colored, onClick }) {
+  return (
+    <div
+      id={id}
+      className={`chord-box ${colored ? "active" : ""}`}
+      onClick={onClick}
+    >
+      {chord || "—"}
     </div>
+  );
 }
 
 export default Chord;

@@ -1,0 +1,32 @@
+# Dependencies
+node_modules/
+package-lock.json
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+*.egg-info/
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Large/generated files
+*.wav
+*.mp4
+*.log
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Build
+/build
+/dist
