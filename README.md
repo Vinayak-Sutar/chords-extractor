@@ -2,7 +2,7 @@
 
 Extract and play guitar chords from any YouTube video! This application uses audio analysis to detect chords from YouTube videos and displays them in a synchronized, scrollable grid for easy learning while the song plays.
 
-**Inspired by Chordify mobile app**
+
 
 ## 🌟 Features
 
